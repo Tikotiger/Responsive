@@ -1,0 +1,279 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+  	font-family: 'Roboto-Regular';
+  	letter-spacing: 1px;
+}
+
+
+body {
+	background-image: url(./../images/slide03.jpg);
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.header-center {
+	width: 960px;
+	height: 100%;
+	margin: 0px auto;
+}
+
+.menu-flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar ul {
+	list-style: none;
+}
+
+.navbar li {
+	display: inline-block;
+}
+
+.navbar a {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 15px;
+	font-size: 16px;
+	font-weight: bold;
+	color: silver;
+	transition: all .5s ease;
+}
+
+.navbar a:hover {
+	color: #fff;
+	transition: all .5s ease;
+}
+
+.logo {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin: 0px auto;
+	background-color: #b54641;
+	z-index: 3;
+}
+
+
+.logo-link {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 15px;
+	font-size: 25px;
+	border-top: 2px solid rgba(255, 255, 255, 0.25);
+	border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+	color: #fff;
+	z-index: 5;
+}
+
+
+.content {
+	width: 960px;
+	height: auto;
+	margin: 50px auto;
+	padding: 0px 10px;
+	overflow: hidden;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+	background-color: #2f3640;
+}
+
+.content-title {
+	text-align: center;
+	margin: 20px 0px;
+	font-size: 33px;
+	color: #fff;
+}
+
+.content-title-text {
+	text-align: center;
+	line-height: 25px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.container {
+	width: 100%;
+	height: auto;
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+.container-box {
+	float: left;
+	width: 313px;
+	height: 300px;
+	padding: 10px;
+	text-align: center;
+	background-color: #000;
+	border-right: 1px solid rgba(255, 255, 255, 0.25);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.container-box:nth-child(3n) {
+	border-right: none;
+}
+
+.number {
+	width: 70px;
+	height: 70px;
+	margin: 0px auto;
+	text-align: center;
+	line-height: 70px;
+	font-size: 27px;
+	border-radius: 100%;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.box-title {
+	text-transform: uppercase;
+	margin: 20px 0px;
+	font-size: 20px;
+	color: #fff;
+}
+
+.box-text {
+	line-height: 25px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.container-links {
+	width: 500px;
+	height: auto;
+	margin: 50px auto;
+}
+
+.link-one {
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 20px 50px;
+	border-radius: 6px;
+	color: #fff;
+	background-color: #b54641;
+	transition: all .3s ease;
+}
+
+.link-one:hover {
+	background-color: #778899;
+	transition: all .3s ease;
+}
+
+.link-two {
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 20px 50px;
+	border-radius: 6px;
+	border: 1px solid #fff;
+	color: #fff;
+	transition: all .3s ease;
+}
+
+.link-two:hover {
+	color: #b54641;
+	border: 1px solid #b54641;
+	transition: all .3s ease;
+}
+
+@media screen and (max-width: 970px) {
+	
+	header {
+		width: 100%;
+	}
+
+	.header-center {
+		width: 100%;
+	}
+
+	.content {
+		width: 100%;
+	}
+	.container {
+		width: 100%;
+	}
+	.container-box {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 670px) {
+	
+	header {
+		width: 100%;
+	}
+
+	.header-center {
+		width: 100%;
+	}
+
+	.logo {
+		width: 100px;
+		height: 100px;
+		margin: 0px auto;
+	}
+
+	.logo-link {
+		font-size: 14px;
+	}
+
+	.navbar a {
+		padding: 10px;
+		font-size: 12px;
+	}
+
+	.content {
+		width: 100%;
+	}
+
+	.content-title {
+		font-size: 23px;
+	}
+	
+	.content-title-text {
+		font-size: 12px;
+	}
+
+	.container {
+		width: 100%;
+	}
+	.container-box {
+		width: 100%;
+	}
+
+	.number {
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		font-size: 16px;
+	}
+	
+	.box-title {
+		font-size: 16px;
+	}
+	
+	.box-text {
+		font-size: 12px;
+	}
+
+	.link-one, .link-two {
+		padding: 10px 20px;
+		font-size: 14px;
+	}
+}
